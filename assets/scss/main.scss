@@ -1,0 +1,42 @@
+@import './base/reset';
+@import './base/typography';
+@import './utils/variables';
+
+@import './utils/inputs';
+
+@import './layout/grid';
+
+@import './layout/sections';
+
+@import './components/nav';
+@import './components/form';
+@import './components/buttons';
+@import './components/info-card';
+@import './components/map-card';
+@import './components/services-card';
+
+@import './utils/helpers';
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: $main-font;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: $sec-font;
+}
+
+a{
+    color: $text-color;
+    text-decoration: none;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }

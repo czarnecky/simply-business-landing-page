@@ -1,0 +1,64 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr 73.125rem 1fr;
+    grid-template-rows: [nav-start] min-content [nav-end hero-start] min-content [hero-end about-start] min-content [about-end work-start] min-content [work-end services-start] min-content [services-end contact-start] min-content [contact-end footer-start] min-content [footer-end];
+}
+.nav{
+    grid-column: 2/3;
+    grid-row: nav-start/nav-end;
+
+    position: absolute;
+}
+.hero{
+    grid-column: 1/-1;
+    grid-row: hero-start/hero-end;
+
+    display: grid;
+    grid-template-columns: 1fr 73.125rem 1fr;
+
+    background-image: url('../assets/images/hero-bg3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about{
+    grid-column: 2/3;
+    grid-row: about-start/about-end;
+    padding: 48px 0 48px;
+}
+.work{
+    grid-column: 1/-1;
+    grid-row: work-start/work-end;
+
+    display: grid;
+    grid-template-columns: 1fr 73.125rem 1fr;
+    background-color: $sec-bg-color;
+    box-shadow: 0px 8px 6px -7px rgba(95, 95, 95, 0.25);
+    padding: 48px 0 48px;
+}
+.services{
+    grid-column: 2/3;
+    grid-row: services-start/services-end;
+    padding: 48px 0 48px;
+}
+.contact{
+    grid-column: 2/3;
+    grid-row: contact-start/contact-end;
+    padding: 48px 0 48px;
+}
+.footer{
+    grid-column: 1/-1;
+    grid-row: footer-start/footer-end;
+
+    display: grid;
+    grid-template-columns: 1fr 73.125rem 1fr;
+    background-color: $dark-bg-color;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .main, .hero, .about, .work, .services, .contact, .footer{
+        grid-template-columns: 1rem 1fr 1rem;
+    }
+
+}

@@ -1,0 +1,118 @@
+.nav{
+    position: absolute;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 73.125rem 1fr;
+    grid-template-rows: min-content;
+    height: 90px;
+    align-content: center;
+    &__content{
+        grid-column: 2/3;
+        grid-row: 1/2;
+
+        display: grid;
+        grid-template-columns: minmax(180px, 280px) 1fr;
+        &__logo{
+            grid-column: 1/2;
+            display: flex;
+            align-content: center;
+            & img{
+                width: 220px;
+            }
+        }
+        &__menu{
+            grid-column: 2/3;
+            display: flex;
+            justify-content: flex-end;
+            &__close{
+                display: none;
+            }
+            & ul{
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                & a{
+                    color: $default-white;
+                }
+            }
+        }
+        &__hamburger{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav{
+        grid-template-columns: 1rem 1fr 1rem;
+        &__content{
+            grid-template-columns: 1fr 40px;
+            &__logo{
+                & img{
+                    width: 180px;
+                }
+            }
+            &__menu{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, min-content);
+                background-color: $sec-bg-color;
+                position: fixed;
+                right: -1920px;
+                top: 0;
+                width: 0;
+                height: 100vh;
+                transition: 0.5s;
+                &__close{
+                    display: flex;
+                    grid-column: 1/-1;
+                    grid-row: 1/2;
+                    justify-content: flex-end;
+                    padding: 1rem;
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
+
+                    & img:hover{
+                        transform: scale(1.04);
+                    }
+                    & img:active{
+                        transform: scale(0.98);
+                    }
+                }
+                & ul{
+                    grid-column: 1/-1;
+                    grid-row: 2/3;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0 1rem 0 1rem;
+                    gap: 2rem;
+                    & li{
+                        width: 100%;
+                        & .menu-link{
+                            color: $dark-bg-color;
+                            font-size: 18px;
+                            font-weight: 500;
+                            width: 100%;
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            &__hamburger{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                cursor: pointer;
+            }
+            &__hamburger:hover{
+                transform: scale(1.04);
+            }
+            &__hamburger:active{
+                transform: scale(0.96);
+            }
+        }
+    }
+  }

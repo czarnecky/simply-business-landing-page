@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Simply__Business - Your Business Landing Page!</title>
+    <meta name="description" content="Simply__Business - Your Business Landing Page! - Your Business Landing Page! (description)"/>
+    <meta property="og:title" content="Social Media Title" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#1c1c1c">
+    <meta name="theme-color" content="#ffffff">
+    
+</head>
+<body>
+<div class="main">
+  <div class="nav" id="nav">
+    <div class="nav__content">
+      <div class="nav__content__logo">
+        <img src="./assets/images/simplybisness.svg" alt="Simply__Business Logo" />
+      </div>
+      <div class="nav__content__menu" id="js-menu">
+        <div class="nav__content__menu__close" id="js-closeMenu">
+          <img src="assets/images/svg/close.svg" alt="Zamknij menu" />
+        </div>
+        <ul>
+          <li><a href="index.html" class="menu-link">Strona główna</a></li>
+          <li><a href="#about" class="menu-link">Kim jesteśmy?</a></li>
+          <li><a href="#work" class="menu-link">Co robimy?</a></li>
+          <li><a href="#services" class="menu-link">Nasze usługi</a></li>
+          <li><a href="#contact" class="btn-main menu-button">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="nav__content__hamburger" id="js-openMenu">
+        <img src="assets/images/svg/hamburger.svg" alt="Otworz menu" />
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="hero__content">
+      <div class="hero__content__title">
+        <h1>Wskazujemy drogę do sukcesu...</h1>
+      </div>
+      <div class="hero__content__lead">
+        <p>Doradzamy i pomagamy w Twoim biznesie</p>
+      </div>
+      <div class="hero__content__cto">
+        <a href="#about" class="btn-hero">
+          Poznaj nas
+          <img src="./assets/images/svg/next-circle.svg" alt="Przejdź dalej" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="about" id="about">
+    <div class="about__content">
+      <div class="about__content__image">
+        <img src="https://source.unsplash.com/random/600x600" loading="lazy" />
+      </div>
+      <div class="about__content__head">
+        <h2>Kim jesteśmy?</h2>
+      </div>
+      <div class="about__content__text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="about__content__text__more">
+          <a href="#work" class="link">
+            Sprawdź czym się zajmujemy 
+            <img src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuNTQ4MDEgMTUuNDg0QzcuMTAyMDEgMTUuMDQ4IDcuMDY3MDEgMTQuNDQxIDcuNTQ4MDEgMTMuOTA4TDExLjI5NSAxMEw3LjU0ODAxIDYuMDkyQzcuMDY3MDEgNS41NTkgNy4xMDIwMSA0Ljk1MSA3LjU0ODAxIDQuNTE4QzcuOTkzMDEgNC4wODIgOC43NDUwMSA0LjExIDkuMTYzMDEgNC41MThDOS41ODEwMSA0LjkyNCAxMy42NjUgOS4yMTMgMTMuNjY1IDkuMjEzQzEzLjc3MDkgOS4zMTUxNCAxMy44NTUxIDkuNDM3NTUgMTMuOTEyNiA5LjU3Mjk0QzEzLjk3MDEgOS43MDgzMyAxMy45OTk3IDkuODUzOTEgMTMuOTk5NyAxMC4wMDFDMTMuOTk5NyAxMC4xNDgxIDEzLjk3MDEgMTAuMjkzNyAxMy45MTI2IDEwLjQyOTFDMTMuODU1MSAxMC41NjQ1IDEzLjc3MDkgMTAuNjg2OSAxMy42NjUgMTAuNzg5QzEzLjY2NSAxMC43ODkgOS41ODEwMSAxNS4wNzYgOS4xNjMwMSAxNS40ODRDOC43NDUwMSAxNS44OTMgNy45OTMwMSAxNS45MiA3LjU0ODAxIDE1LjQ4NFoiIGZpbGw9IiMyMzdDNzIiLz4KPC9zdmc+Cg=='/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="work" id="work">
+    <div class="work__content">
+      <div class="work__content__image">
+        <img src="https://source.unsplash.com/random/600x600" loading="lazy" />
+      </div>
+      <div class="work__content__head">
+        <h2>Czym się zajmujemy?</h2>
+      </div>
+      <div class="work__content__text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="work__content__text__more">
+          <a href="#services" class="link">
+            Poznaj nasze usługi
+            <img src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuNTQ4MDEgMTUuNDg0QzcuMTAyMDEgMTUuMDQ4IDcuMDY3MDEgMTQuNDQxIDcuNTQ4MDEgMTMuOTA4TDExLjI5NSAxMEw3LjU0ODAxIDYuMDkyQzcuMDY3MDEgNS41NTkgNy4xMDIwMSA0Ljk1MSA3LjU0ODAxIDQuNTE4QzcuOTkzMDEgNC4wODIgOC43NDUwMSA0LjExIDkuMTYzMDEgNC41MThDOS41ODEwMSA0LjkyNCAxMy42NjUgOS4yMTMgMTMuNjY1IDkuMjEzQzEzLjc3MDkgOS4zMTUxNCAxMy44NTUxIDkuNDM3NTUgMTMuOTEyNiA5LjU3Mjk0QzEzLjk3MDEgOS43MDgzMyAxMy45OTk3IDkuODUzOTEgMTMuOTk5NyAxMC4wMDFDMTMuOTk5NyAxMC4xNDgxIDEzLjk3MDEgMTAuMjkzNyAxMy45MTI2IDEwLjQyOTFDMTMuODU1MSAxMC41NjQ1IDEzLjc3MDkgMTAuNjg2OSAxMy42NjUgMTAuNzg5QzEzLjY2NSAxMC43ODkgOS41ODEwMSAxNS4wNzYgOS4xNjMwMSAxNS40ODRDOC43NDUwMSAxNS44OTMgNy45OTMwMSAxNS45MiA3LjU0ODAxIDE1LjQ4NFoiIGZpbGw9IiMyMzdDNzIiLz4KPC9zdmc+Cg=='/>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="services" id="services">
+    <div class="services__content">
+      <div class="services__content__head">
+          <h2>Nasze usługi</h2>
+      </div>
+      <div class="services__content__item">
+        <div class="services-card">
+          <div class="services-card__content">
+            <div class="services-card__content__head">
+              <div class="services-card__content__head__icon">
+                  <img src="./assets/images/svg/check.svg" alt="check icon" />
+              </div>
+              <div class="services-card__content__head__title">
+                Dotacje z funduszy Unii Europejskiej
+              </div>
+            </div>
+            <div class="services-card__content__separator">
+              <hr>
+            </div>
+            <div class="services-card__content__text">
+              <p>
+                Pomagamy uzyskać dotacje i dodatkowe fundusze na Twój nowy lub istniejący biznes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="services__content__item">
+        <div class="services-card">
+          <div class="services-card__content">
+            <div class="services-card__content__head">
+              <div class="services-card__content__head__icon">
+                  <img src="./assets/images/svg/check.svg" alt="check icon" />
+              </div>
+              <div class="services-card__content__head__title">
+                Dotacje z funduszy Unii Europejskiej
+              </div>
+            </div>
+            <div class="services-card__content__separator">
+              <hr>
+            </div>
+            <div class="services-card__content__text">
+              <p>
+                Pomagamy uzyskać dotacje i dodatkowe fundusze na Twój nowy lub istniejący biznes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="services__content__item">
+        <div class="services-card">
+          <div class="services-card__content">
+            <div class="services-card__content__head">
+              <div class="services-card__content__head__icon">
+                  <img src="./assets/images/svg/check.svg" alt="check icon" />
+              </div>
+              <div class="services-card__content__head__title">
+                Dotacje z funduszy Unii Europejskiej
+              </div>
+            </div>
+            <div class="services-card__content__separator">
+              <hr>
+            </div>
+            <div class="services-card__content__text">
+              <p>
+                Pomagamy uzyskać dotacje i dodatkowe fundusze na Twój nowy lub istniejący biznes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact" id="contact">
+    <div class="contact__content">
+      <div class="contact__content__title">
+        <h2>Pozostańmy w kontakcie!</h2>
+      </div>
+      <div class="contact__content__info">
+        <div class="info-card">
+          <div class="info-card__content">
+            <div class="info-card__content__icon">
+              <img src="./assets/images/svg/phone.svg" alt="Ikona telefonu" />
+            </div>
+            <div class="info-card__content__text">
+              <div class="info-card__content__text__head">
+                Zadzwoń lub napisz
+              </div>
+              <div class="info-card__content__text__details">
+                <a href="tel:+48600799790">+48 600 799 790</a><br>
+                <a href="contact@yourdomain.com">contact@yourdomain.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card__content">
+            <div class="info-card__content__icon">
+              <img src="./assets/images/svg/location.svg" alt="Ikona mapy" />
+            </div>
+            <div class="info-card__content__text">
+              <div class="info-card__content__text__head">
+                Tu jesteśmy:
+              </div>
+              <div class="info-card__content__text__details">
+                <a href="https://goo.gl/maps/JBQM9cHHafCvkuoy8" target="_blank">
+                  Częstochowska 89, <br>
+                  00-001 Warszawa
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card__content">
+            <div class="info-card__content__icon">
+              <img src="./assets/images/svg/clock.svg" alt="Ikona zagar" />
+            </div>
+            <div class="info-card__content__text">
+              <div class="info-card__content__text__head">
+                Godziny pracy
+              </div>
+              <div class="info-card__content__text__details">
+                Poniedziałek - Piątek<br>
+                8:00 - 16:00
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__content__form">
+          <form class="contact-form">
+            <div class="contact-form__head">
+              <h3>Napisz do nas</h3>
+              <p>Jeżeli masz pytanie lub jakąkolwiek wątpliwość napisz do nas. Odezwiemy się do Ciebie jak najszybciej to możliwe. </p>
+            </div>
+            <div class="contact-form__form">
+              <div class="contact-form__form__input">
+                <input type="text" placeholder="Podaj imię">
+              </div>
+              <div class="contact-form__form__input">
+                <input type="text" placeholder="Podaj nazwisko">
+              </div>
+              <div class="contact-form__form__input">
+                <input type="text" placeholder="Podaj numer telefonu">
+              </div>
+              <div class="contact-form__form__input">
+                <input type="text" placeholder="Podaj adres e-mail">
+              </div>
+              <div class="contact-form__form__textbox">
+                <textarea></textarea>
+              </div>
+              <div class="contact-form__form__agreement">
+                <label class="checkbox-wrapper">
+                  Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w powyższym formularzu w celach handlowych i marketingowych przez [DANE FIRMY] oraz przez podmioty trzecie.
+                  <input type="checkbox" required>
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="contact-form__form__actions">
+                <button class="btn-main" type="submit">Wyślij wiadomość</button>
+              </div>
+            </div>
+          </form>
+      </div>
+      <div class="contact__content__map">
+        <div id="map" class="map-card"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__content">
+      
+        <div class="footer__content__logo">
+          <a href="#"><img src="./assets/images/simplybisness.svg" alt="Simply__Business Logo" /></a>
+        </div>
+        <div class="footer__content__copyrights">
+          <div class="footer__content__copyrights__text">
+            <a href="index.html">Simply__Business - Your Business Landing Page! | <span id="year"></span></a> 
+            <a href="https://czarneckimichal.pl" class="small-copy">Made with 💻, ✋ and  ❤️ by @mczarnecky</a> 
+          </div>
+        </div>
+        <div class="footer__content__socialmedia">
+          <a href="https://www.facebook.com/profile.php?id=100057449019413" target="_blank"><img src="./assets/images/svg/fb.svg" alt="Facebook" /></a>
+          <a href="mailto:contact@yourdomain.com"><img src="./assets/images/svg/mail.svg" alt="E-Mail" /></a>
+        </div>
+
+    </div>
+  </div>
+</div>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

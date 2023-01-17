@@ -1,0 +1,31 @@
+.info-card{
+    background-color: $light-grey;
+    border: 1px solid $grey;
+    border-radius: 8px;
+    padding: 1rem 1.21rem;
+    margin-bottom: 1rem;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0px 8px 6px -7px rgba(95, 95, 95, 0.25);
+
+    &__content{
+        display: flex;
+        gap: 1rem;
+        &__icon{
+            display: flex;
+            align-items: center;
+        }
+        &__text{
+            display: flex;
+            flex-direction: column;
+            &__head{
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.info-card:hover{
+    transform: scale(1.01);
+    border: 1px solid $main-color;
+}

@@ -1,0 +1,37 @@
+.btn-main{
+    display: inline-block;
+    background-color: $main-color;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    color: $light-grey;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    color: $default-white;
+}
+.btn-hero{
+    display: flex;
+    align-items: center;
+    background-color: $bg-color;
+    color: $dark-bg-color;
+    border-radius: 3px;
+    padding: 16px 24px;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+.btn-hero:hover{
+    transform: scale(1.02);
+}
+.btn-hero:active{
+    transform: scale(0.98);
+}
+
+.btn-main:hover{
+    transform: scale(1.02);
+}
+.btn-main:active{
+    transform: scale(0.98);
+}

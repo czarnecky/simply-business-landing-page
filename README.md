@@ -3,4 +3,4 @@ This is really simple landing page for your business. :)
 
 
 You can see the demo here:
-<a href="#">DEMO</a>
+<a href="https://czarneckimichal.pl/projects/simply-business-landing-page">DEMO</a>

@@ -51,6 +51,6 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 L.control.scale({ imperial: true, metric: true }).addTo(map);
 
 // show a marker on the map
-L.marker({ lon: 20.46025, lat: 50.88531 })
-  .bindPopup("FD Projekt - Częstochowska 89, Piekoszów")
+L.marker({ lon: 21.0162, lat: 52.2345 })
+  .bindPopup("Simply Business - Map Position")
   .addTo(map);
